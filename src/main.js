@@ -10,7 +10,7 @@ const scene = new THREE.Scene();
 const textureLoader = new THREE.TextureLoader();
 
 // Create background sphere with stars
-const starsTexture = textureLoader.load('./public/stars.jpg');
+const starsTexture = textureLoader.load('/stars.jpg');
 starsTexture.colorSpace = THREE.SRGBColorSpace;
 
 const backgroundGeometry = new THREE.SphereGeometry(50, 32, 32);
@@ -23,10 +23,10 @@ scene.add(backgroundSphere);
 
 // Load planet textures
 const planetTextures = [
-  './public/earth/map.jpg',
-  './public/venus/map.jpg',
-  './public/volcanic/color.png',
-  './public/csilla/color.png',
+ '/earth/map.jpg',       // Changed from './public/earth/map.jpg'
+  '/venus/map.jpg',       // Changed from './public/venus/map.jpg'
+  '/volcanic/color.png',  // Changed from './public/volcanic/color.png'
+  '/csilla/color.png',    // Changed from './public/csilla/color.png'
 ];
 
 // Camera setup
